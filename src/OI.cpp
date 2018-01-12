@@ -6,9 +6,19 @@
 /*----------------------------------------------------------------------------*/
 
 #include "OI.h"
-
 #include <WPILib.h>
+
+float xAxis;
+float yAxis;
+float zAxis;
 
 OI::OI() {
 	// Process operator interface input here.
+	stickDrive = Joystick(0);
+	stickAux = Joystick(1);
+	solPush = Solenoid(0);
+	solClaw = Solenoid(1);
+	yAxis = stickDrive->GetY();
+	xAxis = stickDrive->GetX();
+
 }

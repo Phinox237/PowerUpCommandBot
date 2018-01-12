@@ -7,6 +7,14 @@
 
 #pragma once
 
+const int motorFL = 0;
+const int motorRL = 1;
+const int motorFR = 2;
+const int motorRR = 3;
+
+const int solClaw = 4;
+const int solPush = 5;
+
 /**
  * The RobotMap is a mapping from the ports sensors and actuators are wired into
  * to a variable name. This provides flexibility changing wiring, makes checking

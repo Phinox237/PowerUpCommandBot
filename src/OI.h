@@ -4,10 +4,16 @@
 /* must be accompanied by the FIRST BSD license file in the root directory of */
 /* the project.                                                               */
 /*----------------------------------------------------------------------------*/
-
+#include <WPILib.h>
 #pragma once
 
 class OI {
 public:
 	OI();
+
+	Joystick *stickDrive;
+	Joystick *stickAux;
+	Solenoid *solClaw;
+	Solenoid *solPush;
+
 };
