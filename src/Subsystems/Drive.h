@@ -11,6 +11,4 @@ public:
 
 private:
 
-	Solenoid *sol;
-
 };

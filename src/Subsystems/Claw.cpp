@@ -1,22 +1,18 @@
-#include <Claw.h>
-#include <WPILib.h>
-#include "ExampleSubsystem.h"
+/*----------------------------------------------------------------------------*/
+/* Copyright (c) 2017-2018 FIRST. All Rights Reserved.                        */
+/* Open Source Software - may be modified and shared by FRC teams. The code   */
+/* must be accompanied by the FIRST BSD license file in the root directory of */
+/* the project.                                                               */
+/*----------------------------------------------------------------------------*/
+
+#include "Claw.h"
+
 #include "../RobotMap.h"
 
-using namespace frc;
-using namespace std;
+Claw::Claw()
+    : frc::Subsystem("ExampleSubsystem") {}
 
-
-Claw::Claw(): Subsystem("ExampleSubsystem") {
-	sol = new Solenoid(solClaw);
-}
-
-void Claw::InitDefaultCommand(){
-
-}
-
-void Claw::RunSystem() {
-	sol->Set(1);
+void Claw::InitDefaultCommand() {
 	// Set the default command for a subsystem here.
 	// SetDefaultCommand(new MySpecialCommand());
 }

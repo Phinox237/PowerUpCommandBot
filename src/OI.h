@@ -13,7 +13,5 @@ public:
 
 	Joystick *stickDrive;
 	Joystick *stickAux;
-	Solenoid *solClaw;
-	Solenoid *solPush;
 
 };

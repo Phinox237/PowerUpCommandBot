@@ -12,8 +12,11 @@ const int motorRL = 1;
 const int motorFR = 2;
 const int motorRR = 3;
 
-const int solClaw = 4;
-const int solPush = 5;
+const int clawFL = 4;
+const int clawRL = 5;
+const int clawFR = 6;
+const int clawRR = 7;
+const int motorClimb = 8;
 
 /**
  * The RobotMap is a mapping from the ports sensors and actuators are wired into
